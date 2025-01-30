@@ -38,14 +38,19 @@ public class EnableDisable : MonoBehaviour
             //sr.enabled = true;
             //script.enabled = true;
             go.SetActive(true);
+            audioSource.PlayOneShot(clip); //plays once upon press
         }
 
         //audio stuff 
 
         if (Input.GetKey(KeyCode.Space))
         {
+            if(audioSource.isPlaying == false)
+            {
+                //audioSource.PlayOneShot(clip); //plays repeatedly (full clip)
+            }
             //audioSource.Play();
-            audioSource.PlayOneShot(clip);
+            //audioSource.PlayOneShot(clip);
         }
 
 
