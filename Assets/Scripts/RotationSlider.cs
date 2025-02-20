@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class RotationSlider : MonoBehaviour
 {
 
-    public Slider Slider;
+    //public Slider Slider;
 
     // Start is called before the first frame update
     void Start()
@@ -18,11 +18,11 @@ public class RotationSlider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Slider = Input.GetComponent<Slider>();
+       // Slider = Input.GetComponent<Slider>();
 
-        Vector3 rot = transform.eulerAngles;
-        rot.z += -Slider;
-        transform.eulerAngles = rot;
+       // Vector3 rot = transform.eulerAngles;
+       // rot.z += -Slider;
+       // transform.eulerAngles = rot;
 
     }
 }
